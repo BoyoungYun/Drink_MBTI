@@ -14,6 +14,17 @@ body
 {
     background-color:#FFD8D8;
 }
+.outer
+{
+    display:table;
+    height:100vh;
+}
+.container
+{
+    display:table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
 .headline
 {
     font-family: 'SDSamliphopangche_Outline';
@@ -29,4 +40,32 @@ body
     border-radius: 20px;
     color:#5D5D5D;
     font-family: 'SDSamliphopangche_Basic';
+}
+.qnaHeadline
+{
+    font-family: 'SDSamliphopangche_Basic';
+    font-size:35px;
+    color:#353535;
+}
+.qnaBox
+{
+    display:table;
+    cursor:pointer;
+    background-color: white;
+    width:100%;
+    height:60px;
+    border-radius:20px;
+    font-size: 20px;
+    color:#5D5D5D;
+    font-family: 'SDSamliphopangche_Basic';
+}
+.qnaBox:active
+{
+    background-color:#CD3B3B;
+    color:white;
+}
+.qnaBox span
+{
+    display:table-cell;
+    vertical-align: middle;
 }
