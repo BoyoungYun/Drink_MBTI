@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import qnaList from './qnaList';
+import answerList from './answerList';
 import { CSSTransition, SwitchTransition, TransitionGroup } from "react-transition-group";
-import beer1 from './img/beer_1.png'
 
 function Question() {
     let [cnt, setCnt] = useState(0);
@@ -10,6 +10,7 @@ function Question() {
     let [mbti, setMbti] = useState('');
     let endPoint = 11;
     let status = (100/endPoint)*cnt;
+    let imgSrc = "/img/"+0+".png";
     return (
         <div className="outer mx-auto">
             <div className="container">
@@ -21,12 +22,29 @@ function Question() {
                             ? <div className="container">
                                 
                                     <h1 className="headline mb-5">당신과 어울리는 술은...</h1>
-                                    <div className="main mx-auto pb-5">
-                                    <div className="col-12 mx-auto px-3 py-4">
-                                        <img className="mx-auto" style={{width:'30%'}} src={beer1}></img>
+                                    <div className="main mx-auto pb-5 px-4">
+                                    <div className="mx-autopy-4">
+                                        <img className="mx-auto col-lg-3 col-mg-3 col-sm-6" src={imgSrc}></img>
                                     </div>
-                                    <span>ENFP<br/></span>
-                                    <span>생맥주</span>
+                                    
+                                        {
+                                            answerList.map((ans,i)=>(
+                                                mbti===answerList[i].m
+                                                ?
+                                                    <>
+                                                    <div className="answerBox" style={{textAlign:'center'}}> 
+                                                        <h3 className="mt-3">{answerList[i].m}</h3>
+                                                        <h3 className="mb-5"><b>{answerList[i].t}</b></h3>
+                                                    </div>
+                                                    <div className="answerBox">
+                                                        <span dangerouslySetInnerHTML={{__html:answerList[i].a}}></span>
+                                                    </div>
+                                                    </>
+                                                : null
+                                            ))
+                                        }
+                                        
+                                    
                                 </div>
                             </div>
                             :
