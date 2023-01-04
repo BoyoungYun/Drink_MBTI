@@ -10,7 +10,6 @@ function Result()
     const isDesktopOrMobile = useMediaQuery({query: '(max-width:768px)'});
     const {mbti} = useParams();
     const navigate = useNavigate();
-    const [id, setID] = useState(0);
     return (
         <div className="container" style={{display:'block'}}>
         <h1 className="headline mt-5 mb-5">당신과 어울리는 술은...</h1>
@@ -20,8 +19,8 @@ function Result()
                     mbti===answerList[i].m
                     ?
                         <>
-                        <div className="mx-auto" onLoad={()=>{setSrc("/img/"+answerList[i].id+".png"); setID(answerList[i].id);}}>
-                            <img className="mx-auto mt-3 col-lg-3 col-mg-3 col-sm-6" src={imgSrc}></img>
+                        <div className="mx-auto" onLoad={()=>setSrc("/img/"+answerList[i].id+".png")}>
+                            <img className="mx-auto mt-3 col-lg-3 col-mg-3 col-sm-6" src={imgSrc} alt={answerList[i].m}></img>
                         </div>
                         <div className="answerBox" style={{textAlign:'center'}}> 
                             <h3 className="mt-3">{"- "+answerList[i].m+" -"}</h3>

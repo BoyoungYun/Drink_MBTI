@@ -1,4 +1,4 @@
-export default [
+const answerList = [
     {
         id:0,
         m:'ENTJ',
@@ -192,3 +192,5 @@ export default [
         bad_id:13
     }
 ]
+
+export default answerList;

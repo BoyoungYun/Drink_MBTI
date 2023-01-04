@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Question() {
     let [cnt, setCnt] = useState(0);
-    let [choice, setChoice] = useState(['E','I','N','S','T','F','J','P']);
+    let choice = ['E','I','N','S','T','F','J','P'];
     let [point, setPoint] = useState([0,0,0,0,0,0,0,0]);
     let mbti='';
     let endPoint = 11;
@@ -52,11 +52,11 @@ function Question() {
         if(cnt===11)
         {
             let mbtiArr = [];
-            for(var i=0; i<point.length-1; i++)
+            for(var j=0; j<point.length-1; j++)
             {
-                if(point[i]>point[i+1]) mbtiArr.push(choice[i]);
-                else mbtiArr.push(choice[i+1]);
-                i++;
+                if(point[j]>point[j+1]) mbtiArr.push(choice[j]);
+                else mbtiArr.push(choice[j+1]);
+                j++;
             }
             mbti=mbtiArr.join('');
             navigate(`/result/${mbti}`);
