@@ -37,13 +37,13 @@ function Result()
                             <div className="mt-5" style={{display:'flex'}}>
                                 <div className="matchBox mx-auto">
                                     <h4><b>최고의 궁합💖</b></h4>
-                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].good_id+".png"}></img>
+                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].good_id+".png"} alt={answerList[i].good_m}></img>
                                     <h4>{answerList[i].good_m}</h4>
                                     <h4><b>{answerList[i].good}</b></h4>
                                 </div>
                                 <div className="matchBox mx-auto">
                                     <h4><b>최악의 궁합💔</b></h4>
-                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].bad_id+".png"}></img>
+                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].bad_id+".png"} alt={answerList[i].bad_m}></img>
                                     <h4>{answerList[i].bad_m}</h4>
                                     <h4><b>{answerList[i].bad}</b></h4>
                                 </div>
@@ -52,14 +52,14 @@ function Result()
                             <>
                                 <div className="matchBox mx-auto">
                                     <h4><b>최고의 궁합💖</b></h4>
-                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].good_id+".png"}></img>
+                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].good_id+".png"} alt={answerList[i].good_m}></img>
                                     <h4>{answerList[i].good_m}</h4>
                                     <h4><b>{answerList[i].good}</b></h4>
                                 </div>
                                 <div className="line my-5"></div>
                                 <div className="matchBox mx-auto mb-4">
                                     <h4><b>최악의 궁합💔</b></h4>
-                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].bad_id+".png"}></img>
+                                    <img className="mx-auto my-3 col-lg-5 col-mg-3 col-sm-6" src={"/img/"+answerList[i].bad_id+".png"} alt={answerList[i].bad_m}></img>
                                     <h4>{answerList[i].bad_m}</h4>
                                     <h4><b>{answerList[i].bad}</b></h4>
                                 </div>

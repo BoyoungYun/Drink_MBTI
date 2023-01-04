@@ -1,4 +1,4 @@
-export default [
+const qnaList = [
     {
         id:0,
         q:'어느 날 멀리 여행을 떠나게 되었다. 그 때 당신은?',
@@ -96,3 +96,5 @@ export default [
         m_b:'J'
     }
 ]
+
+export default qnaList;
