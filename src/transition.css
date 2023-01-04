@@ -1,7 +1,4 @@
-body {
-    overflow: hidden;
-  }
-  
+body 
   .transition-group {
     position: relative;
   }
