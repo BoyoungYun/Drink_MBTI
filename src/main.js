@@ -18,6 +18,10 @@ function Main() {
             </Link>
         </div>
       </div>
+      <div className="footer mt-3">
+        <h6>qhdud4357@gmail.com</h6>
+        <span>본 테스트는 cafe24 고운밤, 산돌 삼립호빵체를 사용하고 있습니다.</span>
+      </div>
     </div>
     </div>
     
