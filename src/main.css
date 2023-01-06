@@ -51,7 +51,6 @@ body
 .qnaHeadline
 {
     font-family: 'SDSamliphopangche_Basic';
-    font-size:35px;
     color:#353535;
 }
 .qnaBox
@@ -113,4 +112,10 @@ body
     width:100%;
     height:2px;
     background-color: #ffeaea;
+}
+.footer
+{
+    font-family: 'SDSamliphopangche_Basic';
+    font-size:13.5px;
+    color:#ffa7a7;
 }
